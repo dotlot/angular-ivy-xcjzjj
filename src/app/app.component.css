@@ -1,0 +1,49 @@
+table,
+th,
+td {
+  border: 1px black solid;
+  border-radius: 2px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: grey;
+  color: white;
+}
+
+div.main {
+  max-width: 920px;
+  margin: 0 25%;
+  background-color: lavender;
+  padding: 20px;
+}
+
+p,
+h1,
+h2,
+li {
+  line-height: 1.6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.nameList {
+  background-color: lightgray;
+  font-size: 22px;
+}
+
+div {
+  padding: 10px;
+}
+
+form {
+  margin: 20px 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+input {
+  margin: 10px 0;
+}

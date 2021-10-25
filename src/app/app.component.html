@@ -1,0 +1,60 @@
+<div class="main">
+  <h1>Neka stran</h1>
+  <p>To je moja prva stran pri RPA.</p>
+  <ul>
+    To je prvi seznam:
+    <li>Alineja 1</li>
+    <li>Alineja 2</li>
+    <li>{{ name1 }}</li>
+    <li>{{ name2 }}</li>
+    <li>{{ name3 }}</li>
+  </ul>
+
+  <div>{{ name }}</div>
+
+  <ul>
+    <li *ngFor="let n of name; let i = index">
+      <div class="nameList" *ngIf="n !== dontShow">
+        {{ n }} - je na poziciji {{ i + 1 }}
+      </div>
+    </li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let num of nuList; let i = index">
+      <div class="nameList" *ngIf="num % 2 === 0">
+        {{ num }} - je na poziciji {{ i }}
+      </div>
+    </li>
+  </ul>
+
+  <ol>
+    To je prvi seznam:
+    <li>Alineja 1</li>
+    <li>Alineja 2</li>
+  </ol>
+
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
+
+  <form action="action_page.php">
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" /><br />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
